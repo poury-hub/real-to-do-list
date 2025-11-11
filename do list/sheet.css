@@ -1,6 +1,24 @@
 body{
     background-color: black;
 }
+h1{
+    color: antiquewhite;
+    display: inline;
+    margin-right: 15px;
+}
+#testman{
+    color: white;
+    background-color: grey;
+    border: solid 2px lightblue;
+    border-radius: 4px;
+    
+}
+#testman:hover{
+    border-color: aqua;
+}
+#testman:active{
+    background-color: cadetblue;
+}
 #listy{
     border-collapse: collapse;
 }
@@ -21,4 +39,13 @@ body{
 #inp{
     text-align: center;
     
+}
+img{
+    height: 350px;
+    width: 600px;
+}
+#blackimg{
+    height: 400px;
+    width: 279px;
+/*  border: solid 1px blue; */
 }

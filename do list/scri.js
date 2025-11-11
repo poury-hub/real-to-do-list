@@ -1,6 +1,6 @@
 let inputboy = document.getElementById('inp');
 let addboy = document.getElementById('but');
-//let delboy = document.getElementsByClassName('del');
+let test = document.getElementById('testman')
 
 let cun = -1;
 
@@ -9,9 +9,8 @@ addboy.onclick = function(){
     inputboy.value = "";
     inputboy.focus();
     if(thing === "") return;
-   
-    cun++
-     console.log(cun);
+    //console.log(cun);
+    cun++ 
     let t = document.createElement('tr');
     let n = document.createElement('td');
     n.textContent = cun + ":";
@@ -41,10 +40,25 @@ addboy.onclick = function(){
             for(let i = ind ; ind<allcuns.length ; i++){
                 allcuns[i].textContent = i + ":";
             }
-            //cun = cin - 2
+            //cun = cun - 2
             //console.log(cun);
         }
     }
 }
+test.onclick = imgadder;
+let table = document.getElementById('listy');
+function imgadder(){
+    img = document.createElement('img');
+    img.src="black.webp";
+    img.id="blackimg"
+    table.after(img);
+}
 
-
+// function imgadder(){
+//     link = document.createElement('a')
+//     link.href="indexxxx.html"
+//     img = document.createElement('img');
+//     img.src="void.webp"
+//     link.append(img)
+//     table.before(link)
+// }
